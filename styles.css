@@ -1,247 +1,300 @@
-/* General Styling */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+    padding: 0 15px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Header */
+/* Header Section */
 header {
-    background-color: #ffcc00; /* Change to your new color */
-    padding: 20px 10px;
-    text-align: center;
+    background-color: #fff; 
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    color: #333;
+    justify-content: space-between;
+    border-bottom: 4px solid #FFD700; /* Golden yellow for a fresh look */
 }
 
+/* Logo Styling */
 header img {
-    width: 150px; 
+    width: 150px;
     height: auto;
+    background: transparent; /* Transparent background */
+    padding: 5px;
 }
 
-header .header-text {
+.header-text {
+    text-align: left;
+    color: #2A2A2A;
+}
+
+.header-text h1 {
+    font-size: 32px;
+    color: #FF4500; /* Vibrant orange-red for logo text */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-    color: #b00000; /* Your logo color */
-}
-
-header p {
-    font-size: 1.2em;
-    color: #333;
-}
-
-/* Top Banner */
-.top-banner {
-    background-color: #ffcc00;
-    padding: 5px 0;
-}
-
-.banner-lines {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.red-line, .yellow-line {
-    height: 10px;
-    width: 30%;
-}
-
-.red-line {
-    background-color: #ff0000; /* Red line */
-}
-
-.yellow-line {
-    background-color: #ffcc00; /* Yellow line */
-}
-
-/* Navigation Bar */
-.navbar {
-    background-color: #b00000; /* Change to your new color */
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-
-.navbar .nav-links {
+.navbar ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
 }
 
-.navbar .nav-links li a {
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
     color: white;
-    font-size: 1em;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background 0.3s;
 }
 
-.navbar .nav-links li a:hover {
-    background-color: #ffcc00; /* Hover effect */
+.navbar a:hover {
+    background-color: #FFD700; /* Hover effect with golden yellow */
+    color: #000;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero-section {
-    background-color: #ffcc00;
-    color: #333;
+    background: url('images/store-banner.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
+    position: relative;
 }
 
 .hero-section h1 {
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 40px;
+    color: #FF4500;
+    margin-bottom: 10px;
 }
 
 .hero-section p {
-    font-size: 1.2em;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
-.hero-section .btn {
-    background-color: #b00000; /* Button color */
+/* Shop Now Button */
+.btn {
+    display: inline-block;
+    background-color: #FF4500;
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-.hero-section .btn:hover {
-    background-color: #ffcc00;
+.btn:hover {
+    background-color: #FFD700;
+    color: #000;
 }
 
-/* Featured Products Section */
+/* About Us Section */
+.about-us {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-left: 5px solid #FF4500;
+}
+
+.about-us h2 {
+    color: #FF4500;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Featured Products */
 .featured-products {
-    padding: 40px 20px;
-    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .featured-products h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #b00000;
+    color: #FF4500;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .products-container {
     display: flex;
-    gap: 20px;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .product-card {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 280px;
     text-align: center;
-    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
 .product-card img {
     width: 100%;
     height: auto;
+    border-bottom: 2px solid #FFD700;
 }
 
 .product-card h4 {
-    font-size: 1.5em;
-    margin-top: 15px;
+    margin: 15px 0 5px;
+    color: #FF4500;
 }
 
 .product-card p {
-    font-size: 1.2em;
-    color: #b00000;
-}
-
-.product-card .buy-now {
-    background-color: #ffcc00;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.product-card .buy-now:hover {
-    background-color: #b00000;
-}
-
-/* About Us Section */
-.about-us {
-    padding: 40px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.about-us h2 {
-    font-size: 2.5em;
-    color: #b00000;
-    margin-bottom: 20px;
-}
-
-.about-us p {
-    font-size: 1.2em;
-    line-height: 1.8;
+    font-size: 16px;
     color: #333;
 }
 
+/* Buy Now Button */
+.buy-now {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #FFD700;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-top: 4px solid #FF4500;
+}
+
+.contact h2 {
+    color: #FF4500;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Google Maps Button */
+.map-button {
+    display: inline-block;
+    background-color: #FF4500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    transition: background 0.3s;
+}
+
+.map-button:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
 /* Footer */
-footer {
-    background-color: #b00000;
+.footer {
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
+    margin-top: 20px;
 }
 
-footer a {
-    color: white;
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer a:hover {
+    color: #FF4500;
 }
 
-/* Add your media queries for responsive design here */
-@media only screen and (max-width: 768px) {
-    .navbar {
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #FF4500;
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
     }
 
     .products-container {
         flex-direction: column;
+        align-items: center;
     }
 }
