@@ -1,308 +1,247 @@
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Styling */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    box-sizing: border-box;
 }
 
-/* Hero Section */
-.hero-section {
-    background-color: #ffcc00; /* Yellow background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
-    text-align: center;
-    padding: 50px 0;
+    line-height: 1.6;
 }
 
-.hero-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.hero-section .btn {
-    background-color: #ff5733; /* Button color */
-    color: white;
-    padding: 10px 20px;
+a {
     text-decoration: none;
-    border-radius: 5px;
+    color: inherit;
 }
 
-.hero-section .btn:hover {
-    background-color: #ff4500;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #ffcc00; /* Change to your new color */
+    padding: 20px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+header img {
+    width: 150px; 
+    height: auto;
+}
+
+header .header-text {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    color: #b00000; /* Your logo color */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Top Banner */
+.top-banner {
+    background-color: #ffcc00;
+    padding: 5px 0;
+}
+
+.banner-lines {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.red-line, .yellow-line {
+    height: 10px;
+    width: 30%;
+}
+
+.red-line {
+    background-color: #ff0000; /* Red line */
+}
+
+.yellow-line {
+    background-color: #ffcc00; /* Yellow line */
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #333;
+    background-color: #b00000; /* Change to your new color */
     color: white;
-    padding: 15px 0;
-    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar .logo {
-    font-size: 1.8rem;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #ffcc00; /* Hover effect */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
     font-weight: bold;
 }
 
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-.navbar ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navbar ul li a {
+.hero-section .btn {
+    background-color: #b00000; /* Button color */
     color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.navbar ul li a:hover {
-    color: #ffcc00;
+.hero-section .btn:hover {
+    background-color: #ffcc00;
 }
 
 /* Featured Products Section */
 .featured-products {
-    background-color: #fff;
-    padding: 50px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .featured-products h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #b00000;
 }
 
 .products-container {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
 .product-card {
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    background-color: #fff;
     padding: 20px;
-    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 .product-card h4 {
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 1.5em;
+    margin-top: 15px;
 }
 
 .product-card p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #b00000;
 }
 
-.product-card button {
-    background-color: #ff5733;
-    color: white;
-    padding: 10px 20px;
+.product-card .buy-now {
+    background-color: #ffcc00;
     border: none;
-    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.product-card button:hover {
-    background-color: #ff4500;
+.product-card .buy-now:hover {
+    background-color: #b00000;
 }
 
 /* About Us Section */
 .about-us {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.about-us h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.about-us p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Contact Us Section */
-.contact-us {
-    padding: 50px 20px;
+    padding: 40px 20px;
     background-color: #fff;
     text-align: center;
 }
 
-.contact-us h2 {
-    font-size: 2rem;
+.about-us h2 {
+    font-size: 2.5em;
+    color: #b00000;
     margin-bottom: 20px;
 }
 
-.contact-us p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.contact-us .contact-button {
-    background-color: #ff5733;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    text-decoration: none;
-}
-
-.contact-us .contact-button:hover {
-    background-color: #ff4500;
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #b00000;
     color: white;
     text-align: center;
-    padding: 20px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1rem;
+    padding: 20px 0;
 }
 
 footer a {
-    color: #ffcc00;
-    text-decoration: none;
+    color: white;
 }
 
 footer a:hover {
-    color: #fff;
+    text-decoration: underline;
 }
 
-/* Call to Action Section */
-.call-to-action {
-    background-color: #ffcc00;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.call-to-action h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.call-to-action p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.call-to-action button {
-    background-color: #ff5733;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-.call-to-action button:hover {
-    background-color: #ff4500;
-}
-
-/* Promotions Section */
-.promotions {
-    background-color: #ff5733;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-.promotions h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.promotions p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-/* Responsive Layout */
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 30px 0;
-    }
-
-    .navbar ul {
-        display: block;
-        text-align: center;
-    }
-
-    .navbar ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .products-container {
+/* Add your media queries for responsive design here */
+@media only screen and (max-width: 768px) {
+    .navbar {
         flex-direction: column;
         align-items: center;
     }
 
-    .product-card {
-        width: 80%;
+    .products-container {
+        flex-direction: column;
     }
-
-    .about-us p {
-        font-size: 1rem;
-    }
-
-    .call-to-action button,
-    .contact-us .contact-button {
-        width: 100%;
-    }
-}
-
-/* Hero Section Button - Shop Now */
-.hero-section .btn {
-    background-color: #ff5733;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.hero-section .btn:hover {
-    background-color: #ff4500;
-}
-
-/* Footer Button */
-footer .btn {
-    background-color: #ff5733;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-footer .btn:hover {
-    background-color: #ff4500;
 }
