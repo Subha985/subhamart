@@ -259,26 +259,26 @@ header img {
 
 /* Gallery Section */
 .gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;
     margin: 20px 0;
     border: 2px solid #FF4500;
     border-radius: 10px;
 }
 
 .gallery img {
-    width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Hover effect with shadow */
 }
 
 /* Responsive Design */
@@ -296,5 +296,9 @@ header img {
     .products-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .gallery {
+        padding: 20px;
     }
 }
