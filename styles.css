@@ -8,10 +8,15 @@
 
 /* Body Styling */
 body {
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-    padding: 0 15px;
+    background-image: url('images/background1.jpg'); /* Path to your background image */
+    background-size: cover;        /* Ensures the background covers the entire screen */
+    background-repeat: no-repeat;  /* Prevents the background from repeating */
+    background-attachment: fixed;  /* Keeps the background fixed while scrolling */
+    background-position: center;   /* Centers the background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 }
 
 /* Header Section */
