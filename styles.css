@@ -251,3 +251,20 @@ header p {
 .buy-now:hover {
     background-color: #e64a19;
 }
+/* Button Styling */
+.visit-button {
+    display: inline-block;
+    background-color: #FF5722; /* Orange color */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+    background-color: #FF3D00; /* Darker shade of orange */
+}
