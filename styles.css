@@ -1,10 +1,5 @@
 /* General Body Styling */
 body {
-    background-image: url('images/background1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -76,4 +71,6 @@ header img {
 /* Hero Section */
 .hero-section {
     text-align: center;
-    padd
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
