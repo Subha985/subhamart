@@ -49,6 +49,45 @@ header img {
     color: #666;
     font-style: italic;
 }
+/* Gallery Section */
+.gallery-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Active Link */
+.navbar ul li a.active {
+    color: #ff9900; /* Highlight active tab */
+    font-weight: bold;
+    border-bottom: 2px solid #ff9900;
+}
+
 
 /* Navbar */
 .navbar {
