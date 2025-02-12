@@ -1,355 +1,79 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Body Styling */
+/* General Body Styling */
 body {
-    background-image: url('images/background1.jpg'); /* Path to your background image */
-    background-size: cover;        /* Ensures the background covers the entire screen */
-    background-repeat: no-repeat;  /* Prevents the background from repeating */
-    background-attachment: fixed;  /* Keeps the background fixed while scrolling */
-    background-position: center;   /* Centers the background */
+    background-image: url('images/background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+    color: #333;
 }
 
-/* Header Section */
+/* Top Banner */
+.top-banner {
+    background: linear-gradient(to right, #FFC107, #FF5722);
+    height: 10px;
+}
+
+/* Header */
 header {
-    background-color: #fff; 
-    padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: 4px solid #FFD700; /* Golden yellow for a fresh look */
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo Styling */
 header img {
     width: 150px;
     height: auto;
-    background: transparent; /* Transparent background */
-    padding: 5px;
-}
-
-.header-text {
-    text-align: left;
-    color: #2A2A2A;
+    margin-right: 20px;
 }
 
 .header-text h1 {
-    font-size: 32px;
-    color: #FF4500; /* Vibrant orange-red for logo text */
-    font-weight: bold;
-    margin-bottom: 5px;
+    font-size: 28px;
+    color: #FF5722;
+    margin: 0;
 }
 
 .header-text p {
     font-size: 14px;
-    color: #666;
-    font-style: italic;
-}
-//* Improved Gallery Section */
-.gallery-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    text-align: center;
+    color: #757575;
 }
 
-.gallery-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-/* Grid Layout for Better Alignment */
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for uniform size */
-    gap: 20px;
-    padding: 10px;
-    max-width: 1200px;
-    margin: auto;
-    justify-items: center; /* Centers images horizontally */
-    align-items: center;   /* Centers images vertically */
-}
-
-.gallery-item {
-    overflow: hidden; /* Hides any overflow if images exceed container */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff; /* Adds a clean background */
-}
-
-/* Ensures Consistent Image Sizes */
-.gallery-item img {
-    width: 100%;
-    height: 250px; /* Fixed height for all images */
-    object-fit: cover; /* Crops and scales images without distortion */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer
-
-
-/* Navigation Active Link */
-.navbar ul li a.active {
-    color: #ff9900; /* Highlight active tab */
-    font-weight: bold;
-    border-bottom: 2px solid #ff9900;
-}
-
-
-/* Navbar */
+/* Navigation Bar */
 .navbar {
-    background-color: #333;
+    background-color: #FF5722;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     padding: 10px 0;
-    text-align: center;
 }
 
 .navbar ul {
-    list-style: none;
-}
-
-.navbar li {
-    display: inline;
-    margin: 0 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .navbar a {
-    text-decoration: none;
     color: white;
-    font-size: 16px;
-    padding: 8px 15px;
-    transition: background 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #FFD700; /* Hover effect with golden yellow */
-    color: #000;
-    border-radius: 5px;
+    background-color: #FFC107;
+    border-radius: 4px;
 }
 
 /* Hero Section */
 .hero-section {
-    background: url('images/store-banner.jpg') no-repeat center center/cover;
-    color: white;
     text-align: center;
-    padding: 60px 20px;
-    position: relative;
-}
-
-.hero-section h1 {
-    font-size: 40px;
-    color: #FF4500;
-    margin-bottom: 10px;
-}
-
-.hero-section p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-/* Shop Now Button */
-.btn {
-    display: inline-block;
-    background-color: #FF4500;
-    color: white;
-    padding: 12px 25px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #FFD700;
-    color: #000;
-}
-
-/* About Us Section */
-.about-us {
-    background-color: #fff;
-    padding: 30px;
-    margin: 20px 0;
-    border-left: 5px solid #FF4500;
-}
-
-.about-us h2 {
-    color: #FF4500;
-    margin-bottom: 10px;
-}
-
-.about-us p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #444;
-}
-
-/* Featured Products */
-.featured-products {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.featured-products h2 {
-    color: #FF4500;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.products-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.product-card {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    width: 280px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #FFD700;
-}
-
-.product-card h4 {
-    margin: 15px 0 5px;
-    color: #FF4500;
-}
-
-.product-card p {
-    font-size: 16px;
-    color: #333;
-}
-
-/* Buy Now Button */
-.buy-now {
-    background-color: #FF4500;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.buy-now:hover {
-    background-color: #FFD700;
-    color: #000;
-    transform: scale(1.05);
-}
-
-/* Contact Section */
-.contact {
-    background-color: #fff;
-    padding: 30px;
-    margin: 20px 0;
-    border-top: 4px solid #FF4500;
-}
-
-.contact h2 {
-    color: #FF4500;
-    text-align: center;
-}
-
-.contact p {
-    font-size: 16px;
-    color: #555;
-    text-align: center;
-    margin: 10px 0;
-}
-
-/* Google Maps Button */
-.map-button {
-    display: inline-block;
-    background-color: #FF4500;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px auto;
-    transition: background 0.3s;
-}
-
-.map-button:hover {
-    background-color: #FFD700;
-    color: #000;
-}
-
-/* Footer */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-}
-
-.footer a {
-    color: #FFD700;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #FF4500;
-}
-
-/* Gallery Section */
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border: 2px solid #FF4500;
-    border-radius: 10px;
-}
-
-.gallery img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .products-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+    padd
