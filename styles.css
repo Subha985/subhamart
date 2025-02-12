@@ -49,7 +49,7 @@ header img {
     color: #666;
     font-style: italic;
 }
-/* Gallery Section */
+//* Improved Gallery Section */
 .gallery-section {
     padding: 20px;
     background-color: #f9f9f9;
@@ -60,26 +60,37 @@ header img {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
+/* Grid Layout for Better Alignment */
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for uniform size */
     gap: 20px;
     padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: center; /* Centers images horizontally */
+    align-items: center;   /* Centers images vertically */
 }
 
+.gallery-item {
+    overflow: hidden; /* Hides any overflow if images exceed container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* Adds a clean background */
+}
+
+/* Ensures Consistent Image Sizes */
 .gallery-item img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    height: 250px; /* Fixed height for all images */
+    object-fit: cover; /* Crops and scales images without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer
 
-.gallery-item img:hover {
-    transform: scale(1.05);
-}
 
 /* Navigation Active Link */
 .navbar ul li a.active {
