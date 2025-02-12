@@ -102,6 +102,7 @@ header img {
     margin-bottom: 30px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
 }
+
 /* New Section for Additional Photos */
 .additional-photos {
     padding: 40px 20px;
@@ -133,6 +134,8 @@ header img {
 .photo-grid img:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+} /* Added missing closing brace here */
+
 /* Shop Now Button */
 .btn {
     display: inline-block;
