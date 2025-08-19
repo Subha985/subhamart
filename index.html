@@ -9,12 +9,14 @@
 </head>
 <body>
 
-  <!-- Top Header with Logo and Right Corner Text -->
+  <!-- Header -->
   <header>
-    <a href="https://www.instagram.com/subha.mart" target="_blank">
-      <img src="subhamart-logo.png" alt="Subha Mart Logo" class="logo" />
-    </a>
-    <div class="header-text-corner">
+    <div class="header-left">
+      <a href="https://www.instagram.com/subha.mart" target="_blank">
+        <img src="subhamart-logo.png" alt="Subha Mart Logo" class="logo" />
+      </a>
+    </div>
+    <div class="header-right">
       <h1><a href="https://www.facebook.com/profile.php?id=100063676087919" class="fb-link" target="_blank">Subha Mart</a></h1>
       <p><a href="https://www.facebook.com/profile.php?id=100063676087919" class="yellow-link" target="_blank">Your Shopping Partner</a></p>
     </div>
@@ -48,7 +50,7 @@
         <img src="images/kellogs.jpg" alt="Kellogg's Muesli Nuts Delight" />
         <h4>Kellogg's Muesli Nuts Delight (240g)</h4>
         <p>Rs. 330.00</p>
-        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Namaste Subha Mart, I want to buy Kellogg\'s Muesli Nuts Delight', '_blank')">Buy Now</button>
+        <button class="buy-now" onclick="buyProduct('Kellogg\'s Muesli Nuts Delight')">Buy Now</button>
       </div>
 
       <!-- Product 2 -->
@@ -56,7 +58,7 @@
         <img src="images/8848.jpg" alt="8848 Vodka" />
         <h4>8848 Vodka (750 ml)</h4>
         <p>Rs. 2,145.00</p>
-        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Namaste Subha Mart, I want to buy 8848 Vodka', '_blank')">Buy Now</button>
+        <button class="buy-now" onclick="buyProduct('8848 Vodka')">Buy Now</button>
       </div>
 
       <!-- Product 3 -->
@@ -64,7 +66,7 @@
         <img src="images/buldak.jpg" alt="Buldak Habanero Lime Ramen" />
         <h4>Buldak Habanero Lime (5 Packs)</h4>
         <p>Rs. 1,130.00</p>
-        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Namaste Subha Mart, I want to buy Buldak Habanero Lime', '_blank')">Buy Now</button>
+        <button class="buy-now" onclick="buyProduct('Buldak Habanero Lime')">Buy Now</button>
       </div>
 
     </div>
@@ -100,5 +102,11 @@
     </div>
   </footer>
 
+  <script>
+    function buyProduct(productName){
+      const url = `https://wa.me/9779849410116?text=Namaste Subha Mart, I want to buy ${encodeURIComponent(productName)}`;
+      window.open(url,'_blank');
+    }
+  </script>
 </body>
 </html>
