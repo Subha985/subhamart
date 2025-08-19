@@ -3,41 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subha Mart</title>
+  <title>Subha Mart - A Convenient Store</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    /* Blinking delivery text */
-    .delivery {
-      position: fixed;
-      top: 15px;
-      right: 15px;
-      font-weight: bold;
-      color: orange;
-      animation: blink 1s infinite;
-      z-index: 1000;
-    }
-    @keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-  </style>
 </head>
 <body>
-
-  <!-- Blinking Delivery Text -->
-  <a href="https://wa.me/9779849410116" target="_blank" class="delivery">All Nepal Delivery, Instant in Kathmandu Valley!</a>
-
   <!-- Header -->
   <header>
     <a href="https://www.instagram.com/subha.mart" target="_blank">
-      <img src="subhamart-logo.png" alt="Subha Mart Logo" class="logo" />
+      <img src="subhamart-logo.png" alt="Subha Mart Logo" style="width:150px;height:auto;" />
     </a>
     <div class="header-text">
-      <h1><a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" style="color:red;">Subha Mart</a></h1>
-      <p><a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" style="color:yellow;">Your Shopping Partner</a></p>
-      <p><a href="https://www.tiktok.com/@subhamart0820" target="_blank" style="color:gold;">Your One-Stop Convenient Store!</a></p>
+      <h1><a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" style="color:red; text-decoration:none;">Subha Mart</a></h1>
+      <p><a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" style="color:yellow; text-decoration:none;">Your Shopping Partner</a></p>
     </div>
   </header>
 
@@ -55,69 +33,77 @@
   <!-- Hero Section -->
   <section class="hero-section">
     <h1>Welcome to Subha Mart</h1>
-    <p>Your Daily Shopping Partner!</p>
-    <a href="#featured" class="btn">Shop Now</a>
+    <p><a href="https://www.tiktok.com/@subhamart0820" target="_blank" style="color:gold; font-weight:bold; text-decoration:none;">Your One-Stop Convenient Store!</a></p>
+    <a href="#featured-products" class="btn">Shop Now</a>
   </section>
 
-  <!-- Featured Products -->
-  <section id="featured" class="featured-products">
+  <!-- Featured Products Section -->
+  <section id="featured-products" class="featured-products">
     <h2>Featured Products</h2>
     <div class="products-container">
 
-      <!-- Product Example -->
+      <!-- Product 1 -->
       <div class="product-card">
-        <img src="images/kellogs.jpg" alt="Kellogg's Muesli Nuts Delight" />
+        <a href="#"><img src="images/kellogs.jpg" alt="Kellogg's Muesli Nuts Delight" /></a>
         <h4>Kellogg's Muesli Nuts Delight (240g)</h4>
         <p>Rs. 330.00</p>
-        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Hi Subha Mart, I want to buy Kellogg\'s Muesli Nuts Delight https://www.daraz.com.np/products/kelloggs-muesli-nuts-delight-12in-1-power-breakfast-240g-i130153412-s1038058516.html', '_blank')">Buy Now</button>
+        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Namaste Subha Mart, I want to buy Kellogg\'s Muesli Nuts Delight https://subha985.github.io/subhamart/products.html', '_blank')">Buy Now</button>
       </div>
 
+      <!-- Product 2 -->
       <div class="product-card">
-        <img src="images/8848.jpg" alt="8848 Vodka" />
+        <a href="#"><img src="images/8848.jpg" alt="8848 Vodka" /></a>
         <h4>8848 Vodka (750 ml)</h4>
         <p>Rs. 2,145.00</p>
-        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Hi Subha Mart, I want to buy 8848 Vodka https://www.daraz.com.np/products/8848-vodka-750-ml-i170995815-s1190123922.html', '_blank')">Buy Now</button>
+        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Namaste Subha Mart, I want to buy 8848 Vodka https://subha985.github.io/subhamart/products.html', '_blank')">Buy Now</button>
       </div>
 
+      <!-- Product 3 -->
       <div class="product-card">
-        <img src="images/buldak.jpg" alt="Buldak Habanero Lime Ramen" />
+        <a href="#"><img src="images/buldak.jpg" alt="Buldak Habanero Lime Ramen" /></a>
         <h4>Buldak Habanero Lime (5 Packs)</h4>
         <p>Rs. 1,130.00</p>
-        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Hi Subha Mart, I want to buy Buldak Habanero Lime https://www.daraz.com.np/products/buldak-habanero-lime-5-packs-i164201617-s1184847982.html', '_blank')">Buy Now</button>
+        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Namaste Subha Mart, I want to buy Buldak Habanero Lime https://subha985.github.io/subhamart/products.html', '_blank')">Buy Now</button>
       </div>
 
     </div>
   </section>
 
-  <!-- About Us -->
+  <!-- About Us Section -->
   <section class="about-us">
     <h2>About Us</h2>
-    <p>Subha Mart is your trusted partner for daily consumables, groceries, and convenience items. We deliver all over Nepal instantly within Kathmandu Valley.</p>
+    <p>
+      Welcome to <strong>Subha Mart</strong>, your trusted shopping destination located at 
+      <strong>Tarakeshwor Municipality, Ward No. 04, Rato Pul</strong>.<br><br>
+      We provide a wide variety of groceries, household essentials, and daily consumables at 
+      affordable prices. We deal only in <strong>genuine and high-quality products</strong> to 
+      ensure every purchase meets your expectations.<br><br>
+      Our mission is to deliver a <strong>convenient, reliable, and enjoyable shopping experience</strong> 
+      both in-store and online, with <span style="color:orange; font-weight:bold;">All Nepal Delivery</span> 
+      and <span style="color:green; font-weight:bold;">Instant Delivery within Kathmandu Valley</span>.<br><br>
+      Thank you for choosing Subha Mart — <em>Your One-Stop Convenient Store!</em>
+    </p>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact">
+  <!-- Contact Us Section -->
+  <section class="contact-us">
     <h2>Contact Us</h2>
-    <p>Tarakeshwor Municipality Ward No. 04, Rato Pul, Kathmandu.</p>
-    <div class="social-links">
-      <a href="https://wa.me/9779849410116" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/subha.mart" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@subhamart0820" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    <p>Subha Mart, Tarakeshwor Municipality Ward No. 04, Rato Pul, Kathmandu.</p>
+
+    <div class="social-links" style="font-size:26px;">
+      <a href="https://wa.me/9779849410116" target="_blank" style="color:#25D366;"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" style="color:#1877F2;"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/subha.mart" target="_blank" style="color:#E4405F;"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@subhamart0820" target="_blank" style="color:#000;"><i class="fa-brands fa-tiktok"></i></a>
     </div>
+
+    <a href="https://www.google.com/maps/place/Subha+Mart/@27.7480687,85.293289,17z" target="_blank" class="btn map-button">Visit on Google Maps</a>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Subha Mart | All Rights Reserved</p>
     <p>Contact: 977-01-5136616 | Email: <a href="mailto:subhamart.sg@gmail.com">subhamart.sg@gmail.com</a></p>
-    <div class="social-links">
-      <a href="https://wa.me/9779849410116" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/subha.mart" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@subhamart0820" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
   </footer>
-
 </body>
 </html>
