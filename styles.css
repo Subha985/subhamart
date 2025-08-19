@@ -130,6 +130,32 @@ header img {
     background-color: #FFD700;
     color: #000;
 }
+.photo-grid.highlight-row {
+  display: flex;
+  justify-content: space-between; /* space evenly */
+  flex-wrap: wrap; /* wrap on smaller screens */
+  gap: 10px; /* spacing between images */
+}
+
+.photo-grid.highlight-row img {
+  width: 32%; /* three images in a row */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid.highlight-row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .photo-grid.highlight-row img {
+    width: 100%; /* stack vertically on mobile */
+    margin-bottom: 10px;
+  }
+}
 
 /* About Us Section */
 .about-us {
