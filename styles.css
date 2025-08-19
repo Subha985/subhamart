@@ -134,7 +134,7 @@ header img {
 .photo-grid img:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-} /* Added missing closing brace here */
+}
 
 /* Shop Now Button */
 .btn {
@@ -289,40 +289,39 @@ header img {
 }
 
 /* Footer */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0; /* Increased padding */
-    margin-top: 30px; /* Increased margin */
-}
 footer {
-  background-color: #f8f8f8;
-  padding: 20px;
-  text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #FF4500;
+}
+
+footer p {
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .whatsapp-footer {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #25d366;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #25d366;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .whatsapp-footer i {
-  font-size: 22px;
+    font-size: 22px;
 }
 
-.footer a {
+footer a {
     color: #FFD700;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.footer a:hover {
+footer a:hover {
     color: #FF4500;
 }
 
@@ -417,3 +416,4 @@ footer {
         font-size: 18px; /* Adjusted font size for smaller screens */
     }
 }
+
