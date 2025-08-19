@@ -296,6 +296,25 @@ header img {
     padding: 20px 0; /* Increased padding */
     margin-top: 30px; /* Increased margin */
 }
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.whatsapp-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #25d366;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp-footer i {
+  font-size: 22px;
+}
 
 .footer a {
     color: #FFD700;
