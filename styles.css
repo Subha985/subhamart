@@ -324,7 +324,29 @@ footer a {
 footer a:hover {
     color: #FF4500;
 }
+footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s;
+}
 
+footer a:hover {
+  color: #25D366; /* WhatsApp green */
+}
+
+.facebook-footer:hover {
+  color: #1877F2; /* Facebook blue */
+}
+
+.instagram-footer:hover {
+  color: #E4405F; /* Instagram pink */
+}
+
+.tiktok-footer:hover {
+  color: #000000; /* TikTok black */
+}
 /* Gallery Section */
 .gallery {
     display: grid;
