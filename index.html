@@ -12,21 +12,13 @@
 
   <style>
     /* Footer & Social Icons */
-    .footer {
-      background-color: #f8f8f8;
-      padding: 20px;
+    .footer, .contact .social-links {
       text-align: center;
-      border-top: 4px solid #FF4500;
-    }
-
-    .footer p {
-      color: #333;
-      margin-bottom: 10px;
     }
 
     .social-links a {
-      margin: 0 10px;
-      font-size: 28px;
+      margin: 0 12px;
+      font-size: 36px; /* Increased size */
       text-decoration: none;
       transition: transform 0.3s;
     }
@@ -77,11 +69,8 @@
     <h1>Welcome to Subha Mart</h1>
     <p>Your One-Stop Convenient Store!</p>
 
-    <a
-      href="https://wa.me/9779849410116?text=Namaste%20Subha%20Mart%2C%20I%20want%20to%20shop."
-      target="_blank"
-      class="btn"
-    >
+    <!-- Redirect to Featured Products -->
+    <a href="#featured-products" class="btn">
       Shop Now
     </a>
   </section>
@@ -110,34 +99,34 @@
   </section>
 
   <!-- Featured Products Section -->
-  <section class="featured-products">
+  <section class="featured-products" id="featured-products">
     <h2>Featured Products</h2>
     <div class="products-container">
       <div class="product-card">
-        <a href="https://www.daraz.com.np/products/kelloggs-muesli-nuts-delight-12in-1-power-breakfast-240g-i130153412-s1038058516.html?spm=a2a0e.8553159.0.0.7d344a96S3jZEo&search=store&mp=3" target="_blank">
+        <a href="#" target="_blank">
           <img src="images/kellogs.jpg" alt="Kellogg's Muesli Nuts Delight" />
         </a>
         <h4>Kellogg's Muesli Nuts Delight (240g)</h4>
         <p>Rs. 330.00</p>
-        <button class="buy-now" onclick="window.open('https://www.daraz.com.np/products/kelloggs-muesli-nuts-delight-12in-1-power-breakfast-240g-i130153412-s1038058516.html?spm=a2a0e.8553159.0.0.7d344a96S3jZEo&search=store&mp=3', '_blank')">Buy Now</button>
+        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Namaste%20Subha%20Mart%2C%20I%20want%20to%20buy%20Kellogg\'s%20Muesli%20Nuts%20Delight', '_blank')">Buy Now</button>
       </div>
 
       <div class="product-card">
-        <a href="https://www.daraz.com.np/products/8848-vodka-750-ml-i170995815-s1190123922.html?spm=a2a0e.8553159.0.0.2c3f4a96x7M8H6&search=store&mp=3" target="_blank">
+        <a href="#" target="_blank">
           <img src="images/8848.jpg" alt="8848 Vodka" />
         </a>
         <h4>8848 Vodka (750 ml)</h4>
         <p>Rs. 2,145.00</p>
-        <button class="buy-now" onclick="window.open('https://www.daraz.com.np/products/8848-vodka-750-ml-i170995815-s1190123922.html?spm=a2a0e.8553159.0.0.2c3f4a96x7M8H6&search=store&mp=3', '_blank')">Buy Now</button>
+        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Namaste%20Subha%20Mart%2C%20I%20want%20to%20buy%208848%20Vodka', '_blank')">Buy Now</button>
       </div>
 
       <div class="product-card">
-        <a href="https://www.daraz.com.np/products/buldak-habanero-lime-5-packs-i164201617-s1184847982.html?spm=a2a0e.8553159.0.0.2c2f4a96uzdC2C&search=store&mp=3" target="_blank">
+        <a href="#" target="_blank">
           <img src="images/buldak.jpg" alt="Buldak Habanero Lime Ramen" />
         </a>
         <h4>Buldak Habanero Lime (5 Packs)</h4>
         <p>Rs. 1,130.00</p>
-        <button class="buy-now" onclick="window.open('https://www.daraz.com.np/products/buldak-habanero-lime-5-packs-i164201617-s1184847982.html?spm=a2a0e.8553159.0.0.2c2f4a96uzdC2C&search=store&mp=3', '_blank')">Buy Now</button>
+        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Namaste%20Subha%20Mart%2C%20I%20want%20to%20buy%20Buldak%20Habanero%20Lime', '_blank')">Buy Now</button>
       </div>
     </div>
   </section>
@@ -152,18 +141,10 @@
 
     <!-- Social Media Icons -->
     <div class="social-links">
-      <a href="https://wa.me/9779849410116" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="https://www.instagram.com/subha.mart?igsh=MXc5aTVrcnMzczNlag%3D%3D" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.tiktok.com/@subhamart0820" target="_blank" aria-label="TikTok">
-        <i class="fab fa-tiktok"></i>
-      </a>
+      <a href="https://wa.me/9779849410116" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/subha.mart?igsh=MXc5aTVrcnMzczNlag%3D%3D" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@subhamart0820" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
     </div>
 
     <!-- Google Maps Button -->
@@ -184,9 +165,12 @@
       Email: <a href="mailto:subhamart.sg@gmail.com">subhamart.sg@gmail.com</a>
     </p>
 
-    <!-- Social Icons in Footer -->
     <div class="social-links">
-      <a href="https://wa.me/9779849410116" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="
+      <a href="https://wa.me/9779849410116" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/subha.mart?igsh=MXc5aTVrcnMzczNlag%3D%3D" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@subhamart0820" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
