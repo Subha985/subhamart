@@ -20,21 +20,27 @@ header {
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-bottom: 4px solid #FFD700;
 }
 
 header img {
-    width: 150px;
-    height: auto;
+    padding: 5px;
+}
+
+.header-text {
+    text-align: left;
+    margin-left: 20px;
 }
 
 .header-text h1 {
-    color: #FF4500;
     font-size: 32px;
+    color: #FF4500;
+    font-weight: bold;
 }
 
 .header-text p {
+    font-size: 14px;
     color: #666;
     font-style: italic;
 }
@@ -45,18 +51,24 @@ header img {
     padding: 10px 0;
     text-align: center;
 }
+
 .navbar ul {
     list-style: none;
 }
+
 .navbar li {
     display: inline;
     margin: 0 15px;
 }
+
 .navbar a {
-    color: white;
     text-decoration: none;
+    color: white;
+    font-size: 16px;
     padding: 8px 15px;
+    transition: background 0.3s, color 0.3s;
 }
+
 .navbar a:hover {
     background-color: #FFD700;
     color: #000;
@@ -70,17 +82,21 @@ header img {
     text-align: center;
     padding: 100px 20px;
 }
+
 .hero-section h1 {
     font-size: 48px;
     color: #FF4500;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 15px;
 }
+
 .hero-section p {
     font-size: 24px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
 }
 
-/* Button */
+/* Buttons */
 .btn {
     display: inline-block;
     background-color: #FF4500;
@@ -89,8 +105,9 @@ header img {
     font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
-    transition: all 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
+
 .btn:hover {
     background-color: #FFD700;
     color: #000;
@@ -98,40 +115,142 @@ header img {
 }
 
 /* Additional Photos */
+.additional-photos {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
 .photo-grid img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* About Us */
+.about-us {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    border-left: 5px solid #FF4500;
+}
+
+.about-us h2 {
+    color: #FF4500;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Featured Products */
 .featured-products {
+    background-color: #fff;
     padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.featured-products h2 {
+    color: #FF4500;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
 .products-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
 }
+
 .product-card {
     background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
     width: 280px;
-    border-radius: 8px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
 .product-card img {
     width: 100%;
+    border-bottom: 2px solid #FFD700;
     border-radius: 8px;
 }
+
+.product-card h4 {
+    margin: 15px 0 10px;
+    color: #FF4500;
+    font-size: 20px;
+}
+
+.product-card p {
+    font-size: 16px;
+}
+
 .buy-now {
     background-color: #FF4500;
     color: white;
-   
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #FFD700;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-us {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    border-top: 4px solid #FF4500;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #FF4500;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .products-container { flex-direction: column; align-items:center; }
+    .hero-section h1{ font-size:36px; }
+    .hero-section p{ font-size:18px; }
+}
