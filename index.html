@@ -1,116 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subha Mart - A Convenient Store</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subha Mart - A Convenient Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome (v6) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <!-- Top Banner with Red and Yellow Lines -->
-    <div class="top-banner">
-        <div class="banner-lines">
-            <div class="red-line"></div>
-            <div class="yellow-line"></div>
-        </div>
+  <!-- Top Banner with Red and Yellow Lines -->
+  <div class="top-banner">
+    <div class="banner-lines">
+      <div class="red-line"></div>
+      <div class="yellow-line"></div>
     </div>
+  </div>
 
-    <!-- Header with Logo and Navigation -->
-    <header>
-        <a href="https://www.daraz.com.np/shop/subha-mart/?spm=a2a0e.pdp_revamp.seller.1.56571949xJJsaP&itemId=121578093&channelSource=pdp">
-            <img src="subhamart-logo.png" alt="Subha Mart Logo" style="width: 150px; height: auto; float: left;">
+  <!-- Header with Logo and Text (Daraz link removed) -->
+  <header>
+    <img src="subhamart-logo.png" alt="Subha Mart Logo" style="width:150px;height:auto;float:left;" />
+    <div class="header-text">
+      <h1>Subha Mart</h1>
+      <p>Your Shopping Partner</p>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Subha Mart</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>Welcome to Subha Mart</h1>
+    <p>Your One-Stop Convenient Store!</p>
+
+    <!-- "Shop Now" now opens WhatsApp chat -->
+    <a
+      href="https://wa.me/9779849410116?text=Namaste%20Subha%20Mart%2C%20I%20want%20to%20shop."
+      target="_blank"
+      class="btn"
+    >
+      Shop Now
+    </a>
+  </section>
+
+  <!-- New Section for Additional Photos -->
+  <section class="additional-photos">
+    <h2>Featured Highlights</h2>
+    <div class="photo-grid">
+      <img src="images/front1.jpg" alt="Front 1" />
+      <img src="images/front2.jpg" alt="Front 2" />
+      <img src="images/front3.jpg" alt="Front 3" />
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p>
+      Subha Mart is located at Tarakeshwor Municipality Ward No. 04, Rato Pul. We offer a wide
+      variety of groceries and essentials at reasonable prices. Our goal is to provide customers with
+      the best shopping experience and high-quality products. Whether you are looking for everyday
+      groceries, snacks, beverages, or household items, Subha Mart has everything you need under one
+      roof. We are committed to offering great customer service and ensuring the best prices for our
+      loyal customers.
+    </p>
+  </section>
+
+  <!-- Featured Products Section (left as-is) -->
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="products-container">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <a href="https://www.daraz.com.np/products/kelloggs-muesli-nuts-delight-12in-1-power-breakfast-240g-i130153412-s1038058516.html?spm=a2a0e.8553159.0.0.7d344a96S3jZEo&search=store&mp=3" target="_blank">
+          <img src="images/kellogs.jpg" alt="Kellogg's Muesli Nuts Delight" />
         </a>
-        <div class="header-text">
-            <h1>Subha Mart</h1>
-            <p>Your Shopping Partner</p>
-        </div>
-    </header>
+        <h4>Kellogg's Muesli Nuts Delight (240g)</h4>
+        <p>Rs. 330.00</p>
+        <button class="buy-now" onclick="window.open('https://www.daraz.com.np/products/kelloggs-muesli-nuts-delight-12in-1-power-breakfast-240g-i130153412-s1038058516.html?spm=a2a0e.8553159.0.0.7d344a96S3jZEo&search=store&mp=3', '_blank')">Buy Now</button>
+      </div>
 
-    <!-- Navigation Bar -->
-   <nav class="navbar">
-        <div class="logo">Subha Mart</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <a href="https://www.daraz.com.np/products/8848-vodka-750-ml-i170995815-s1190123922.html?spm=a2a0e.8553159.0.0.2c3f4a96x7M8H6&search=store&mp=3" target="_blank">
+          <img src="images/8848.jpg" alt="8848 Vodka" />
+        </a>
+        <h4>8848 Vodka (750 ml)</h4>
+        <p>Rs. 2,145.00</p>
+        <button class="buy-now" onclick="window.open('https://www.daraz.com.np/products/8848-vodka-750-ml-i170995815-s1190123922.html?spm=a2a0e.8553159.0.0.2c3f4a96x7M8H6&search=store&mp=3', '_blank')">Buy Now</button>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <h1>Welcome to Subha Mart</h1>
-        <p>Your One-Stop Convenient Store!</p>
-        <a href="products.html" class="btn">Shop Now</a>
-    </section>
-    <!-- New Section for Additional Photos -->
-    <section class="additional-photos">
-        <h2>Featured Highlights</h2>
-        <div class="photo-grid">
-            <img src="images/front1.jpg" alt="Front 1">
-            <img src="images/front2.jpg" alt="Front 2">
-            <img src="images/front3.jpg" alt="Front 3">
-        </div>
-    </section>
-    <!-- About Us Section -->
-    <section class="about-us">
-        <h2>About Us</h2>
-        <p>Subha Mart is located at Tarakeshwor Municipality Ward No. 04, Rato Pul. We offer a wide variety of groceries and essentials at reasonable prices. Our goal is to provide customers with the best shopping experience and high-quality products. Whether you are looking for everyday groceries, snacks, beverages, or household items, Subha Mart has everything you need under one roof. We are committed to offering great customer service and ensuring the best prices for our loyal customers.</p>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section class="featured-products">
-        <h2>Featured Products</h2>
-        <div class="products-container">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <a href="https://www.daraz.com.np/products/kelloggs-muesli-nuts-delight-12in-1-power-breakfast-240g-i130153412-s1038058516.html?spm=a2a0e.8553159.0.0.7d344a96S3jZEo&search=store&mp=3" target="_blank">
-                    <img src="images/kellogs.jpg" alt="Kellogg's Muesli Nuts Delight">
-                </a>
-                <h4>Kellogg's Muesli Nuts Delight (240g)</h4>
-                <p>Rs. 330.00</p>
-                <button class="buy-now" onclick="window.open('https://www.daraz.com.np/products/kelloggs-muesli-nuts-delight-12in-1-power-breakfast-240g-i130153412-s1038058516.html?spm=a2a0e.8553159.0.0.7d344a96S3jZEo&search=store&mp=3', '_blank')">Buy Now</button>
-            </div>
-            <!-- Product 2 -->
-            <div class="product-card">
-                <a href="https://www.daraz.com.np/products/8848-vodka-750-ml-i170995815-s1190123922.html?spm=a2a0e.8553159.0.0.2c3f4a96x7M8H6&search=store&mp=3" target="_blank">
-                    <img src="images/8848.jpg" alt="8848 Vodka">
-                </a>
-                <h4>8848 Vodka (750 ml)</h4>
-                <p>Rs. 2,145.00</p>
-                <button class="buy-now" onclick="window.open('https://www.daraz.com.np/products/8848-vodka-750-ml-i170995815-s1190123922.html?spm=a2a0e.8553159.0.0.2c3f4a96x7M8H6&search=store&mp=3', '_blank')">Buy Now</button>
-            </div>
-            <!-- Product 3 -->
-            <div class="product-card">
-                <a href="https://www.daraz.com.np/products/buldak-habanero-lime-5-packs-i164201617-s1184847982.html?spm=a2a0e.8553159.0.0.2c2f4a96uzdC2C&search=store&mp=3" target="_blank">
-                    <img src="images/buldak.jpg" alt="Buldak Habanero Lime Ramen">
-                </a>
-                <h4>Buldak Habanero Lime (5 Packs)</h4>
-                <p>Rs. 1,130.00</p>
-                <button class="buy-now" onclick="window.open('https://www.daraz.com.np/products/buldak-habanero-lime-5-packs-i164201617-s1184847982.html?spm=a2a0e.8553159.0.0.2c2f4a96uzdC2C&search=store&mp=3', '_blank')">Buy Now</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Us Section with Button -->
-<section class="contact-us">
-    <h2>Contact Us</h2>
-    <p>Subha Mart is located at Tarakeshwor Municipality Ward No. 04, Rato Pul, Kathmandu. Feel free to visit us or reach out via the contact information below.</p>
-    
-    <!-- Button to Redirect to Google Maps -->
-    <a href="https://www.google.com/maps/place/Subha+Mart/@27.7480687,85.293289,17z/data=!4m14!1m7!3m6!1s0x39eb1f0f488ff6b5:0xc3ab94e42aaa5889!2sSubha+Mart!8m2!3d27.7480687!4d85.2958639!16s%2Fg%2F11h_5m6_qh!3m5!1s0x39eb1f0f488ff6b5:0xc3ab94e42aaa5889!8m2!3d27.7480687!4d85.2958639!16s%2Fg%2F11h_5m6_qh?entry=ttu&g_ep=EgoyMDI1MDIxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn visit-button">Visit Subha Mart on Google Maps</a>
-</section>
-   <!-- Footer -->
-<footer class="footer">
-    <p>&copy; 2025 Subha Mart | All Rights Reserved</p>
-    <p>Contact: 977-01-5136616 | Email: <a href="mailto:subhamart.sg@gmail.com">subhamart.sg@gmail.com</a></p>
-    <a href="https://wa.me/9779849410116" target="_blank" class="whatsapp-footer">
-    <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
-  </a>
-    <!-- Google Map Link (Remove this part) -->
-    <div class="map-link">
-        <a href="https://www.google.com/maps/place/Subha+Mart/@27.7480687,85.293289,17z/data=!4m14!1m7!3m6!1s0x39eb1f0f488ff6b5:0xc3ab94e42aaa5889!2sSubha+Mart!8m2!3d27.7480687!4d85.2958639!16s%2Fg%2F11h_5m6_qh!3m5!1s0x39eb1f0f488ff6b5:0xc3ab94e42aaa5889!8m2!3d27.7480687!4d85.2958639!16s%2Fg%2F11h_5m6_qh?entry=ttu&g_ep=EgoyMDI1MDIxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn">Visit Subha Mart</a>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <a href="https://www.daraz.com.np/products/buldak-habanero-lime-5-packs-i164201617-s1184847982.html?spm=a2a0e.8553159.0.0.2c2f4a96uzdC2C&search=store&mp=3" target="_blank">
+          <img src="images/buldak.jpg" alt="Buldak Habanero Lime Ramen" />
+        </a>
+        <h4>Buldak Habanero Lime (5 Packs)</h4>
+        <p>Rs. 1,130.00</p>
+        <button class="buy-now" onclick="window.open('https://www.daraz.com.np/products/buldak-habanero-lime-5-packs-i164201617-s1184847982.html?spm=a2a0e.8553159.0.0.2c2f4a96uzdC2C&search=store&mp=3', '_blank')">Buy Now</button>
+      </div>
     </div>
-</footer>
+  </section>
+
+  <!-- Contact Us Section (now includes social icons) -->
+  <section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>
+      Subha Mart is located at Tarakeshwor Municipality Ward No. 04, Rato Pul, Kathmandu. Feel free
+      to visit us or reach out via the contact information below.
+    </p>
+
+    <!-- Social + Contact Icons -->
+    <div class="social-links">
+      <a href="https://wa.me/9779849410116" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/subha.mart?igsh=MXc5aTVrcnMzczNlag%3D%3D" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.tiktok.com/@subhamart0820" target="_blank" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+    </div>
+
+    <!-- Button to Redirect to Google Maps -->
+    <a
+      href="https://www.google.com/maps/place/Subha+Mart/@27.7480687,85.293289,17z/data=!4m14!1m7!3m6!1s0x39eb1f0f488ff6b5:0xc3ab94e42aaa5889!2sSubha+Mart!8m2!3d27.7480687!4d85.2958639!16s%2Fg%2F11h_5m6_qh!3m5!1s0x39eb1f0f488ff6b5:0xc3ab94e42aaa5889!8m2!3d27.7480687!4d85.2958639!16s%2Fg%2F11h_5m6_qh?entry=ttu"
+      target="_blank"
+      class="btn visit-button"
+    >
+      Visit Subha Mart on Google Maps
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Subha Mart | All Rights Reserved</p>
+    <p>
+      Contact: 977-01-5136616 |
+      Email: <a href="mailto:subhamart.sg@gmail.com">subhamart.sg@gmail.com</a>
+    </p>
+
+    <!-- WhatsApp in footer (FA6 class fixed) -->
+    <a href="https://wa.me/9779849410116" target="_blank" class="whatsapp-footer">
+      <i class="fa-brands fa-whatsapp"></i> Chat with us on WhatsApp
+    </a>
+  </footer>
+</body>
+</html>
