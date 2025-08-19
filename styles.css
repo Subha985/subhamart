@@ -1,55 +1,287 @@
 /* General Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-/* Body */
-body { background-color: #f9f9f9; color: #333; line-height: 1.6; padding: 0 15px; }
+/* Body Styling */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 15px;
+}
 
-/* Header */
-header { display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 10px 20px; flex-wrap: wrap; }
-.logo { max-width: 150px; height: auto; }
-.header-right { text-align: right; }
-.header-right h1 a.fb-link { color: red; font-size: 22px; text-decoration: none; font-weight: bold; }
-.header-right p a.yellow-link { color: yellow; font-size: 16px; text-decoration: none; }
+/* Header Section */
+header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 4px solid #FFD700;
+  gap: 15px;
+}
+
+/* Logo Styling */
+header img.logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Header Text */
+.header-text h1 a,
+.header-text p a {
+  text-decoration: none;
+}
+
+.header-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.header-text p {
+  font-size: 16px;
+  margin-top: 5px;
+}
 
 /* Navbar */
-.navbar { background-color: #333; text-align: center; padding: 10px 0; }
-.navbar ul { list-style: none; }
-.navbar li { display: inline-block; margin: 0 15px; }
-.navbar a { color: #fff; text-decoration: none; padding: 8px 15px; transition: background 0.3s; }
-.navbar a:hover { background: #FFD700; color: #000; border-radius: 5px; }
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #FFD700;
+  color: #000;
+  border-radius: 5px;
+}
 
 /* Hero Section */
-.hero-section { background: url('images/store-banner.jpg') no-repeat center/cover; text-align: center; color: white; padding: 100px 20px; position: relative; }
-.hero-section h1 a.gold-link { color: #FFD700; text-decoration: none; font-size: 36px; text-shadow: 2px 2px 4px rgba(255,215,0,0.8); }
-.hero-section p { font-size: 20px; margin-bottom: 20px; }
-.btn { display: inline-block; background-color: #FF4500; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; }
-.btn:hover { background-color: #FFD700; color: #000; }
+.hero-section {
+  background: url('images/store-banner.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  color: #FF4500;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn {
+  display: inline-block;
+  background-color: #FF4500;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #FFD700;
+  color: #000;
+  transform: scale(1.05);
+}
 
 /* Featured Products */
-.featured-products { background: #fff; padding: 30px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-.featured-products h2 { color: #FF4500; text-align: center; margin-bottom: 30px; font-size: 32px; }
-.products-container { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
-.product-card { background: #f0f0f0; border-radius: 8px; padding: 20px; width: 280px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
-.product-card:hover { transform: translateY(-5px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
-.product-card img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
-.product-card h4 { color: #FF4500; font-size: 20px; margin: 10px 0; }
-.product-card p { font-size: 16px; color: #333; }
-.buy-now { background-color: #FF4500; color: #fff; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; }
-.buy-now:hover { background-color: #FFD700; color: #000; }
+.featured-products {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.featured-products h2 {
+  color: #FF4500;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #FFD700;
+  border-radius: 8px;
+}
+
+.product-card h4 {
+  margin: 15px 0 10px;
+  color: #FF4500;
+  font-size: 20px;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+.buy-now {
+  background-color: #FF4500;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.buy-now:hover {
+  background-color: #FFD700;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* About Us Section */
+.about-us {
+  background-color: #fff;
+  padding: 40px;
+  margin: 20px 0;
+  border-left: 5px solid #FF4500;
+}
+
+.about-us h2 {
+  color: #FF4500;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 /* Contact Section */
-.contact { background: #fff; padding: 40px; margin: 20px 0; border-top: 4px solid #FF4500; text-align: center; }
-.contact h2 { color: #FF4500; font-size: 32px; margin-bottom: 15px; }
-.contact p { font-size: 16px; margin-bottom: 20px; }
-.social-links a { margin: 0 10px; font-size: 24px; transition: color 0.3s; }
-.whatsapp-footer { color: #25D366; }
-.facebook-footer { color: #1877F2; }
-.instagram-footer { color: #E4405F; }
-.tiktok-footer { color: #000; }
+.contact {
+  background-color: #fff;
+  padding: 40px;
+  margin: 20px 0;
+  border-top: 4px solid #FF4500;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #FF4500;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  margin: 15px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 28px;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links a i {
+  color: inherit;
+}
+
+/* Social media brand colors */
+.social-links a[href*="whatsapp"] i { color: #25D366; }
+.social-links a[href*="facebook"] i { color: #1877F2; }
+.social-links a[href*="instagram"] i { color: #E4405F; }
+.social-links a[href*="tiktok"] i { color: #000000; }
 
 /* Footer */
-footer { background: #f8f8f8; padding: 20px; text-align: center; border-top: 4px solid #FF4500; }
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-top: 4px solid #FF4500;
+}
 
-/* Blinking WhatsApp Delivery */
-.whatsapp-blink { position: fixed; bottom: 20px; right: 20px; color: orange; font-weight: bold; font-size: 18px; text-decoration: none; animation: blink 1s infinite; z-index: 999; }
-@keyframes blink { 0%,50%,100% { opacity: 1; } 25%,75% { opacity: 0; } }
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #FFD700;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #FF4500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section h1 { font-size: 36px; }
+  .hero-section p { font-size: 18px; }
+}
