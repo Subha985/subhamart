@@ -15,35 +15,29 @@ body {
 }
 
 /* Header */
-header {
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border-bottom: 4px solid #FFD700;
+/* Header text links */
+.header-text h1 a.fb-link {
+    color: red;
+    text-decoration: none;
 }
 
-header img {
-    padding: 5px;
+.header-text p a.yellow-link {
+    color: #FFD700; /* Yellow */
+    text-decoration: none;
 }
 
-.header-text {
-    text-align: left;
-    margin-left: 20px;
+/* Hero section link */
+.hero-section h1 a.gold-link {
+    color: #FFD700;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.8); /* Shining gold effect */
+    transition: transform 0.3s;
 }
 
-.header-text h1 {
-    font-size: 32px;
-    color: #FF4500;
-    font-weight: bold;
+.hero-section h1 a.gold-link:hover {
+    transform: scale(1.05);
 }
 
-.header-text p {
-    font-size: 14px;
-    color: #666;
-    font-style: italic;
-}
 
 /* Navbar */
 .navbar {
