@@ -1,91 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subha Mart - Products</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+    }
+
+    header {
+      background: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .product p {
+      margin: 5px 0;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .buy-btn:hover {
+      background: #1da851;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
-    <a href="https://www.instagram.com/subha.mart" target="_blank">
-      <img src="subhamart-logo.png" alt="Subha Mart Logo" class="logo" />
-    </a>
-    <div class="header-text">
-      <h1><a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank">Subha Mart</a></h1>
-      <p><a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank">Your Shopping Partner</a></p>
-    </div>
+    <h1>Our Products</h1>
+    <p>All Nepal Delivery | Instant in Kathmandu Valley!</p>
   </header>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-
-  <!-- Products Section -->
-  <section class="featured-products">
-    <h2>Our Products</h2>
-    <div class="products-container">
-
-      <!-- Product 1 -->
-      <div class="product-card">
-        <img src="images/kellogs.jpg" alt="Kellogg's Muesli Nuts Delight" />
-        <h4>Kellogg's Muesli Nuts Delight (240g)</h4>
-        <p>Rs. 330.00</p>
-        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Hi Subha Mart, I want to buy Kellogg\'s Muesli Nuts Delight https://www.daraz.com.np/products/kelloggs-muesli-nuts-delight-12in-1-power-breakfast-240g-i130153412-s1038058516.html', '_blank')">Buy Now</button>
-      </div>
-
-      <!-- Product 2 -->
-      <div class="product-card">
-        <img src="images/8848.jpg" alt="8848 Vodka" />
-        <h4>8848 Vodka (750 ml)</h4>
-        <p>Rs. 2,145.00</p>
-        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Hi Subha Mart, I want to buy 8848 Vodka https://www.daraz.com.np/products/8848-vodka-750-ml-i170995815-s1190123922.html', '_blank')">Buy Now</button>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="product-card">
-        <img src="images/buldak.jpg" alt="Buldak Habanero Lime Ramen" />
-        <h4>Buldak Habanero Lime (5 Packs)</h4>
-        <p>Rs. 1,130.00</p>
-        <button class="buy-now" onclick="window.open('https://wa.me/9779849410116?text=Hi Subha Mart, I want to buy Buldak Habanero Lime https://www.daraz.com.np/products/buldak-habanero-lime-5-packs-i164201617-s1184847982.html', '_blank')">Buy Now</button>
-      </div>
-
+  <div class="container">
+    <!-- Example Product -->
+    <div class="product">
+      <img src="images/product1.jpg" alt="Nescafe Classic Coffee">
+      <h3>Nescafe Classic Coffee 190g</h3>
+      <p>Rs. 480</p>
+      <a class="buy-btn" href="https://wa.me/9779849410116?text=Hello%20Subha%20Mart!%20I%20want%20to%20buy%20Nescafe%20Classic%20Coffee%20190g%20-%20link:%20https://subha985.github.io/subhamart/products.html#nescafe" target="_blank">Buy Now</a>
     </div>
-  </section>
 
-  <!-- Contact Us Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Subha Mart, Tarakeshwor Municipality Ward No. 04, Rato Pul, Kathmandu.</p>
-    <div class="social-links">
-      <a href="https://wa.me/9779849410116" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/subha.mart" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@subhamart0820" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    <div class="product">
+      <img src="images/product2.jpg" alt="Dairy Milk Chocolate">
+      <h3>Dairy Milk Chocolate 150g</h3>
+      <p>Rs. 250</p>
+      <a class="buy-btn" href="https://wa.me/9779849410116?text=Hello%20Subha%20Mart!%20I%20want%20to%20buy%20Dairy%20Milk%20Chocolate%20150g%20-%20link:%20https://subha985.github.io/subhamart/products.html#dairymilk" target="_blank">Buy Now</a>
     </div>
-    <a href="https://www.google.com/maps/place/Subha+Mart/@27.7480687,85.293289,17z" target="_blank" class="btn map-button">Visit on Google Maps</a>
-  </section>
 
-  <!-- Footer -->
+    <div class="product">
+      <img src="images/product3.jpg" alt="Sunflower Oil 1L">
+      <h3>Sunflower Oil 1L</h3>
+      <p>Rs. 320</p>
+      <a class="buy-btn" href="https://wa.me/9779849410116?text=Hello%20Subha%20Mart!%20I%20want%20to%20buy%20Sunflower%20Oil%201L%20-%20link:%20https://subha985.github.io/subhamart/products.html#sunfloweroil" target="_blank">Buy Now</a>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2025 Subha Mart | All Rights Reserved</p>
-    <p>Contact: 977-01-5136616 | Email: <a href="mailto:subhamart.sg@gmail.com">subhamart.sg@gmail.com</a></p>
-    <div class="social-links">
-      <a href="https://wa.me/9779849410116" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/subha.mart" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@subhamart0820" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
+    <p>© 2025 Subha Mart | All Rights Reserved</p>
   </footer>
 
 </body>
