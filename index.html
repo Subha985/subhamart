@@ -1,112 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subha Mart - A Convenient Store</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body>
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
 
-  <!-- Header -->
-  <header>
-    <div class="header-left">
-      <a href="https://www.instagram.com/subha.mart" target="_blank">
-        <img src="subhamart-logo.png" alt="Subha Mart Logo" class="logo" />
-      </a>
-    </div>
-    <div class="header-right">
-      <h1><a href="https://www.facebook.com/profile.php?id=100063676087919" class="fb-link" target="_blank">Subha Mart</a></h1>
-      <p><a href="https://www.facebook.com/profile.php?id=100063676087919" class="yellow-link" target="_blank">Your Shopping Partner</a></p>
-    </div>
-  </header>
+/* Body */
+body { background:#f9f9f9; color:#333; line-height:1.6; padding:0 15px; }
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+/* Header */
+header { display:flex; justify-content:space-between; align-items:center; background:#fff; padding:10px 20px; flex-wrap:wrap; }
+.logo { max-width:120px; height:auto; }
+.header-right { text-align:right; }
+.header-right h1 a.fb-link { color:red; font-size:22px; text-decoration:none; font-weight:bold; }
+.header-right p.yellow-link { color:yellow; font-size:16px; text-decoration:none; }
+.header-right p.gold-link { color:#FFD700; font-size:16px; text-decoration:none; text-shadow:1px 1px 2px #fff; }
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <h1><a href="https://www.tiktok.com/@subhamart0820" target="_blank" class="gold-link">Your One-Stop Convenient Store!</a></h1>
-    <p>Quality Products at Your Doorstep</p>
-    <a href="#featured-products" class="btn">Shop Now</a>
-  </section>
+/* Navbar */
+.navbar { background:#333; text-align:center; padding:10px 0; }
+.navbar ul { list-style:none; }
+.navbar li { display:inline-block; margin:0 15px; }
+.navbar a { color:#fff; text-decoration:none; padding:8px 15px; transition:0.3s; }
+.navbar a:hover { background:#FFD700; color:#000; border-radius:5px; }
 
-  <!-- Featured Products -->
-  <section class="featured-products" id="featured-products">
-    <h2>Featured Products</h2>
-    <div class="products-container">
+/* Hero */
+.hero-section { background:url('images/store-banner.jpg') no-repeat center/cover; text-align:center; color:white; padding:100px 20px; }
+.hero-section h1 a.gold-link { color:#FFD700; font-size:36px; text-decoration:none; text-shadow:2px 2px 4px rgba(255,215,0,0.8); }
+.hero-section p { font-size:20px; margin-bottom:20px; }
+.btn { display:inline-block; background:#FF4500; color:white; padding:15px 30px; text-decoration:none; border-radius:5px; }
+.btn:hover { background:#FFD700; color:#000; }
 
-      <!-- Product 1 -->
-      <div class="product-card">
-        <img src="images/kellogs.jpg" alt="Kellogg's Muesli Nuts Delight" />
-        <h4>Kellogg's Muesli Nuts Delight (240g)</h4>
-        <p>Rs. 330.00</p>
-        <button class="buy-now" onclick="buyProduct('Kellogg\'s Muesli Nuts Delight')">Buy Now</button>
-      </div>
+/* Featured Products */
+.featured-products { background:#fff; padding:30px; margin:20px 0; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+.featured-products h2 { color:#FF4500; text-align:center; font-size:32px; margin-bottom:30px; }
+.products-container { display:flex; flex-wrap:wrap; justify-content:space-around; gap:20px; }
+.product-card { background:#f0f0f0; border-radius:8px; padding:20px; width:280px; text-align:center; transition:0.3s; }
+.product-card:hover { transform:translateY(-5px); box-shadow:0 6px 16px rgba(0,0,0,0.15); }
+.product-card img { width:100%; border-radius:8px; margin-bottom:10px; }
+.product-card h4 { color:#FF4500; font-size:20px; margin:10px 0; }
+.product-card p { font-size:16px; }
+.buy-now { background:#FF4500; color:#fff; border:none; padding:12px 24px; border-radius:5px; cursor:pointer; }
+.buy-now:hover { background:#FFD700; color:#000; }
 
-      <!-- Product 2 -->
-      <div class="product-card">
-        <img src="images/8848.jpg" alt="8848 Vodka" />
-        <h4>8848 Vodka (750 ml)</h4>
-        <p>Rs. 2,145.00</p>
-        <button class="buy-now" onclick="buyProduct('8848 Vodka')">Buy Now</button>
-      </div>
+/* Contact */
+.contact { background:#fff; padding:40px; margin:20px 0; border-top:4px solid #FF4500; text-align:center; }
+.contact h2 { color:#FF4500; font-size:32px; margin-bottom:15px; }
+.social-links a { margin:0 10px; font-size:28px; transition:0.3s; }
+.whatsapp-footer { color:#25D366; }
+.facebook-footer { color:#1877F2; }
+.instagram-footer { color:#E4405F; }
+.tiktok-footer { color:#000; }
 
-      <!-- Product 3 -->
-      <div class="product-card">
-        <img src="images/buldak.jpg" alt="Buldak Habanero Lime Ramen" />
-        <h4>Buldak Habanero Lime (5 Packs)</h4>
-        <p>Rs. 1,130.00</p>
-        <button class="buy-now" onclick="buyProduct('Buldak Habanero Lime')">Buy Now</button>
-      </div>
+/* Footer */
+footer { background:#f8f8f8; padding:20px; text-align:center; border-top:4px solid #FF4500; }
 
-    </div>
-  </section>
+/* Blinking WhatsApp */
+.whatsapp-blink { position:fixed; bottom:20px; right:20px; color:orange; font-weight:bold; font-size:18px; text-decoration:none; animation:blink 1s infinite; z-index:999; }
+@keyframes blink { 0%,50%,100% { opacity:1; } 25%,75% { opacity:0; } }
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Subha Mart, Tarakeshwor Municipality Ward No. 04, Rato Pul, Kathmandu.</p>
-
-    <div class="social-links">
-      <a href="https://wa.me/9779849410116" target="_blank" class="whatsapp-footer"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" class="facebook-footer"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/subha.mart" target="_blank" class="instagram-footer"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@subhamart0820" target="_blank" class="tiktok-footer"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-
-    <a href="https://www.google.com/maps/place/Subha+Mart/@27.7480687,85.293289,17z" target="_blank" class="btn map-button">Visit on Google Maps</a>
-  </section>
-
-  <!-- Blinking WhatsApp Delivery Text -->
-  <a href="https://wa.me/9779849410116" target="_blank" class="whatsapp-blink">All Nepal Delivery, Instant in Kathmandu Valley!</a>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Subha Mart | All Rights Reserved</p>
-    <p>Contact: 977-01-5136616 | Email: <a href="mailto:subhamart.sg@gmail.com">subhamart.sg@gmail.com</a></p>
-    <div class="social-links">
-      <a href="https://wa.me/9779849410116" target="_blank" class="whatsapp-footer"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100063676087919" target="_blank" class="facebook-footer"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/subha.mart" target="_blank" class="instagram-footer"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@subhamart0820" target="_blank" class="tiktok-footer"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-  </footer>
-
-  <script>
-    function buyProduct(productName){
-      const url = `https://wa.me/9779849410116?text=Namaste Subha Mart, I want to buy ${encodeURIComponent(productName)}`;
-      window.open(url,'_blank');
-    }
-  </script>
-</body>
-</html>
+/* Responsive */
+@media(max-width:768px){
+  header { flex-direction:column; text-align:center; }
+  .header-right { margin-top:10px; text-align:center; }
+  .products-container { flex-direction:column; align-items:center; }
+}
